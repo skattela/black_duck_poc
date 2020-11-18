@@ -1,2 +1,2 @@
 flask
-pyyaml==5.1
+django==1.9.6
