@@ -12,7 +12,7 @@ setup(
     install_requires=["requests", "numpy", "Django==1.9.6"],
     entry_points={
       'console_scripts': [
-          'example-pip-travis=app:main'
+          'example-pip-travis=Main:main'
       ]
     }
 )
