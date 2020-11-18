@@ -1,9 +1,10 @@
 FROM python:slim-buster
 
-COPY app.py /app.py
+COPY src/app.py /app.py
 COPY requirements.txt /requirements.txt
 
-RUN pip install -r requirements.txt
+RUN pip install --upgrade pip
+RUN python setup.py install
 
 ENTRYPOINT [ "python" ]
 CMD [ "app.py" ]
